@@ -29,10 +29,10 @@ class GoMapsPage extends StatelessWidget {
                     urlTemplate: dotenv.env["openstreetmapurl"],
                     userAgentPackageName: 'com.example.app',
                   ),
-                  if(getxmap.polylinePoints!.value!.isNotEmpty)
-                    PolylineLayer(polylines: [
-                      Polyline(points: getxmap.polylinePoints!.value!,color: Colors.blue,strokeWidth: 4)
-                    ]),
+                  // if(getxmap.polylinePoints!.value!.isNotEmpty)
+                  //   PolylineLayer(polylines: [
+                  //     Polyline(points: getxmap.polylinePoints!.value!,color: Colors.blue,strokeWidth: 4)
+                  //   ]),
                   if (getxmap.currentLocation.value != null)
                     MarkerLayer(
                       markers: [
